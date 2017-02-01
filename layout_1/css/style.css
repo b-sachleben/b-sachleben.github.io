@@ -1,0 +1,122 @@
+/*------------Base Styles---------------*/
+
+/*-----------font styles-----------------
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-family: 'Slabo 27px', serif;
+    font-family: 'Josefin Sans', sans-serif;
+    --------------------------------------*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+header {
+  height: 200px;
+  background-color: #7aa2b9;
+}
+
+/*-------------Site navigation-------------*/
+
+.top_nav li,
+.bottom_nav li {
+  /*display: inline-block;
+  -webkit-justify-content: center;
+  justify-content: center;*/
+  padding: 30px;
+  background-color: #19447d;
+  border-radius: .75em;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*.top_nav {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}*/
+
+.top_nav a {
+  color: white;
+}
+
+/*------------Content boxes--------------*/
+
+/*.container {
+  display: flex;
+  align-content: space-between;;
+}
+
+.content_box {
+  padding: 20px;
+  box-sizing: border-box;
+}*/
+
+/*-------------Footer-------------------*/
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom_nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*-------------Media Queries--------------*/
+
+@media (min-width: 769px) {
+  .top_nav li,
+  .bottom_nav li {
+    display: inline-block;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+
+  .top_nav {
+    display: -webkit-flex;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+
+}
+
+@media (min-width: 1050px) {
+  .container {
+    display: flex;
+    align-content: space-between;;
+  }
+
+  .content_box {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}
