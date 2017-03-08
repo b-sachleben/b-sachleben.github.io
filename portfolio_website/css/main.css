@@ -1,0 +1,73 @@
+/*--------------------------------------
+              Base Styles
+---------------------------------------*/
+
+/* tag resets */
+
+nav li {
+  list-style-type: none;
+  padding: .5em 0 .5em;
+}
+
+body, a {
+  color: #555;
+}
+
+a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+/* large image section */
+
+img {
+  max-width: 100%;
+}
+
+.image_lrg {
+  text-align: center;
+  padding: 1em 0 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.image_lrg, .image_sml {
+  margin-bottom: 1em;
+}
+
+.close_image {
+  float: left;
+  margin-left: 2em;
+}
+
+.prev_next_image {
+  float: right;
+  margin-right: 2em;
+}
+
+/* end large image section */
+
+/* navigation menu */
+
+.menu li {
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.menu_button {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+/* end navigation menu */
+
+/* graphic styles */
+
+.site_logo {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  margin: 0;
+  padding: .5em 0 .75em;
+  font-size: 3.5em;
+}
+
+/* end graphic styles */
