@@ -6,7 +6,6 @@
 
 nav li {
   list-style-type: none;
-  padding: .5em 0 .5em;
 }
 
 body, a {
@@ -50,11 +49,19 @@ img {
 .menu li {
   text-align: center;
   font-size: 1.25em;
+  padding: .5em 0 .5em;
+  cursor: pointer;
 }
 
 .menu_button {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
+}
+
+.nav_link a:hover .menu li,
+.nav_link a:hover .menu_expanded li {
+  color: white;
+  background-color: #ddd;
 }
 
 /* end navigation menu */
@@ -70,4 +77,31 @@ img {
   font-size: 3.5em;
 }
 
+footer {
+  text-align: center;
+  border-top: 1px solid #ddd;
+  padding: 1em 0 1em;
+}
+
+.social_media_icons {
+  width: 30px;
+  height: 30px;
+}
+
+.email {
+  width: 36px;
+  height: 36px;
+  margin-left: -6px;
+}
+
 /* end graphic styles */
+
+/* image thumbnails section */
+
+.image_sml {
+  margin: .75em 0 .75em;
+  text-align: center;
+}
+
+
+/* end image thumbnails section */

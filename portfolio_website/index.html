@@ -23,12 +23,12 @@
     <header>
 
       <nav class="menu">
-        <nav class="menu_expanded menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
+        <nav class="menu_expanded">
+          <li class="nav_link"><a href="#">Home</a></li>
+          <li class="nav_link"><a href="#">About</a></li>
+          <li class="nav_link"><a href="#">Portfolio</a></li>
         </nav><!-- end menu_expand -->
-        <li class="menu_button"><a href="#">Menu</a></li>
+        <li class="menu_button nav_link"><a href="#">Menu</a></li>
       </nav><!-- end menu_min -->
 
     </header>
@@ -40,62 +40,62 @@
       <h1 class="site_logo">Brian<br>Sachleben</h1>
 
       <!-- image gallery -->
-      <div class="row">
+      <div id="image_list" class="row">
 
-        <div class="image_lrg active col-xs-12">
-          <img src="img/coast_hwy_lrg.jpg" alt="large image">
-          <div class="img_descrip">
-            <h2>Image Title</h2>
-            <p>Normcore bushwick four loko, coloring book aesthetic whatever tote bag. Drinking vinegar hexagon artisan selvage, pitchfork tousled tofu gochujang next level listicle williamsburg keytar helvetica. Whatever trust fund echo park typewriter. Yr post-ironic fingerstache cold-pressed. Next level literally dreamcatcher locavore, pickled tote bag sustainable fashion axe crucifix. Godard hashtag squid church-key. Neutra knausgaard readymade, microdosing post-ironic twee wolf lo-fi messenger bag beard cred pitchfork brunch.</p>
+        <div id="large_image" class="image_lrg active col-xs-12">
+          <div id="image_placeholder"><!-- Image goes here <img src="img/coast_hwy.jpg" alt="large image"> --></div>
+          <div class="img_info">
+            <h2 id="image_title"><!-- Image Title goes here --></h2>
+            <p id="image_description"><!-- Image descrition goes here --></p>
           </div>
           <div class="image_navigation">
             <p>
               <span class="close_image"><a href="#">CLOSE</a></span>
-              <span class="prev_next_image"><a href="#">PREV</a> | <a href="#">NEXT</a></span>
+              <span class="prev_next_image"><a class="prev_button" href="#">PREV</a> | <a class="next_button" href="#">NEXT</a></span>
             </p>
           </div>
         </div>
-
-        <div class="image_sml col-xs-6 col-md-3">
-          <img src="img/coast_hwy_sml.jpg" alt="gallery thumbnail">
+<!--
+        <div class="image_sml col-xs-6 col-sm-3 col-lg-2">
+          <a href="#large_image"><img src="img/coast_hwy_sml.jpg" alt="gallery thumbnail"></a>
         </div>
 
-        <div class="image_sml col-xs-6 col-md-3">
-          <img src="img/coast_hwy_sml.jpg" alt="gallery thumbnail">
+        <div class="image_sml col-xs-6 col-sm-3 col-lg-2">
+          <a href="#large_image"><img src="img/seattle_waterfront_sml.jpg" alt="gallery thumbnail"></a>
         </div>
 
-        <div class="image_sml col-xs-6 col-md-3">
-          <img src="img/coast_hwy_sml.jpg" alt="gallery thumbnail">
+        <div class="image_sml col-xs-6 col-sm-3 col-lg-2">
+          <a href="#large_image"><img src="img/snow_pines_sml.jpg" alt="gallery thumbnail"></a>
         </div>
 
-        <div class="image_sml col-xs-6 col-md-3">
-          <img src="img/coast_hwy_sml.jpg" alt="gallery thumbnail">
+        <div class="image_sml col-xs-6 col-sm-3 col-lg-2">
+          <a href="#large_image"><img src="img/japanese_garden_sml.jpg" alt="gallery thumbnail"></a>
         </div>
 
-        <div class="image_sml col-xs-6 col-md-3">
-          <img src="img/coast_hwy_sml.jpg" alt="gallery thumbnail">
+        <div class="image_sml col-xs-6 col-sm-3 col-lg-2">
+          <a href="#large_image"><img src="img/lilypads_sml.jpg" alt="gallery thumbnail"></a>
         </div>
 
-        <div class="image_sml col-xs-6 col-md-3">
-          <img src="img/coast_hwy_sml.jpg" alt="gallery thumbnail">
+        <div class="image_sml col-xs-6 col-sm-3 col-lg-2">
+          <a href="#large_image"><img src="img/mount_rainier_sml.jpg" alt="gallery thumbnail"></a>
         </div>
 
-        <div class="image_sml col-xs-6 col-md-3">
-          <img src="img/coast_hwy_sml.jpg" alt="gallery thumbnail">
+        <div class="image_sml col-xs-6 col-sm-3 col-lg-2">
+          <a href="#large_image"><img src="img/mountain_snow_sml.jpg" alt="gallery thumbnail"></a>
         </div>
 
-        <div class="image_sml col-xs-6 col-md-3">
-          <img src="img/coast_hwy_sml.jpg" alt="gallery thumbnail">
+        <div class="image_sml col-xs-6 col-sm-3 col-lg-2">
+          <a href="#large_image"><img src="img/seagull_waves_sml.jpg" alt="gallery thumbnail"></a>
         </div>
 
-        <div class="image_sml col-xs-6 col-md-3">
-          <img src="img/coast_hwy_sml.jpg" alt="gallery thumbnail">
+        <div class="image_sml col-xs-6 col-sm-3 col-lg-2">
+          <a href="#large_image"><img src="img/bird_birdbath_sml.jpg" alt="gallery thumbnail"></a>
         </div>
 
-        <div class="image_sml col-xs-6 col-md-3">
-          <img src="img/coast_hwy_sml.jpg" alt="gallery thumbnail">
+        <div class="image_sml col-xs-6 col-sm-3 col-lg-2">
+          <a href="#large_image"><img src="img/sunset_ocean_sml.jpg" alt="gallery thumbnail"></a>
         </div>
-
+        -->
       </div> <!-- end bootstrap "row" class -->
 
       <!-- end image gallery -->
@@ -106,11 +106,11 @@
 
       <p class="copyright">&copy; Copyright Brian Sachleben</p>
       <div class="social_links">
-        <img src="#" class="instagram" alt="instagram">
-        <img src="#" class="facebook" alt="facebook">
-        <img src="#" class="linkedin" alt="linkedin">
-        <img src="#" class="dribbble" alt="dribbble">
-        <img src="#" class="email" alt="email">
+        <img src="svg/Instagram.svg" class="instagram social_media_icons" alt="instagram">
+        <img src="svg/Facebook.svg" class="facebook social_media_icons" alt="facebook">
+        <img src="svg/Twitter.svg" class="twitter social_media_icons" alt="linkedin">
+        <img src="svg/Dribbble.svg" class="dribbble social_media_icons" alt="dribbble">
+        <img src="svg/email.svg" class="email social_media_icons" alt="email">
       </div>
 
     </footer>

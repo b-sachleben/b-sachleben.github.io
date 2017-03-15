@@ -1,0 +1,62 @@
+[
+  {
+    "name" : "Coast Highway",
+    "description" : "The Pacific coast from California's Highway 1",
+    "thumbURL" : "img/coast_hwy_sml.jpg",
+    "enlargedURL" : "img/coast_hwy.jpg"
+  },
+  {
+    "name" : "Seattle Waterfront",
+    "description" : "A picture of the Seattle skyline from across Elliott Bay",
+    "thumbURL" : "img/seattle_waterfront_sml.jpg",
+    "enlargedURL" : "img/seattle_waterfront.jpg"
+  },
+  {
+    "name" : "Snow Pines",
+    "description" : "An image of pine trees in the winter",
+    "thumbURL" : "img/snow_pines_sml.jpg",
+    "enlargedURL" : "img/snow_pines.jpg"
+  },
+  {
+    "name" : "Japanese Garden",
+    "description" : "An image of the Zen garden at the Portland Japanese Garden in Portland, Oregon",
+    "thumbURL" : "img/japanese_garden_sml.jpg",
+    "enlargedURL" : "img/japanese_garden.jpg"
+  },
+  {
+    "name" : "Lily Pads",
+    "description" : "A picture of lily pads on a pond",
+    "thumbURL" : "img/lilypads_sml.jpg",
+    "enlargedURL" : "img/lilypads.jpg"
+  },
+  {
+    "name" : "Mount Rainier",
+    "description" : "Mount Rainier rising above the evergreen forest in Washington state",
+    "thumbURL" : "img/mount_rainier_sml.jpg",
+    "enlargedURL" : "img/mount_rainier.jpg"
+  },
+  {
+    "name" : "Mountain and Snow",
+    "description" : "An image of a mountain in the Olympic Range of Washington State. Snow remains on the ground high on the slopes in late spring.",
+    "thumbURL" : "img/mountain_snow_sml.jpg",
+    "enlargedURL" : "img/mountain_snow.jpg"
+  },
+  {
+    "name" : "Seagull",
+    "description" : "A seagull wades in the small waves at the water's edge",
+    "thumbURL" : "img/seagull_waves_sml.jpg",
+    "enlargedURL" : "img/seagull_waves.jpg"
+  },
+  {
+    "name" : "Chickadee",
+    "description" : "A chickadee perches on the edge of a birdbath with a carved wooden figurine in the center",
+    "thumbURL" : "img/bird_birdbath_sml.jpg",
+    "enlargedURL" : "img/bird_birdbath.jpg"
+  },
+  {
+    "name" : "Sunset Over the Ocean",
+    "description" : "The sun sets over the water beyond a rocky shore on the Pacific Ocean",
+    "thumbURL" : "img/sunset_ocean_sml.jpg",
+    "enlargedURL" : "img/sunset_ocean.jpg"
+  }
+]
