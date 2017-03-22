@@ -22,6 +22,10 @@ img {
   max-width: 100%;
 }
 
+#image_placeholder {
+  /*min-height: 66vw;*/
+}
+
 .image_lrg {
   text-align: center;
   padding: 1em 0 1em;
@@ -105,3 +109,25 @@ footer {
 
 
 /* end image thumbnails section */
+
+/*--------------------------------------
+              About Page
+---------------------------------------*/
+
+/* bio section */
+
+  .bio_pic {
+    background: url('../img/bio-pic-lrg.jpg') no-repeat;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 2em;
+  }
+
+  .bio {
+    margin: 2em 0;
+  }
+
+/* end bio section */
+
+/* end ABOUT PAGE */

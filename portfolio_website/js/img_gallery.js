@@ -110,18 +110,6 @@ $(document).ready(function() {
       element.onclick = openLargeImage;
     }
 
-
-
-  // Top navigation menu toggle
-
-  var $menu = $(".menu_expanded");
-  var $menuToggle = $(".menu_button");
-  $menu.hide();
-  $menuToggle.on("click", function(event) {
-    event.preventDefault();
-    $menu.toggle();
-  });
-
   // Large Image section controls
 
   var $closeImage = $(".close_image a");
@@ -135,9 +123,22 @@ $(document).ready(function() {
     $largeImage.hide();
   });
 
+  //get #image_placeholder height and save it as a min-height to avoid blips when previous and next buttons are clicked
+
+  var savePlaceholderHeight = function() {
+    var currentHeight = $('#image_placeholder').height();
+    $('#image_placeholder').css('min-height', currentHeight);
+  }
+
+  //reset #image_placeholder height on window resize
+  $(window).resize(function(){
+    $('#image_placeholder').css('min-height', 'initial');
+  });
+
   // previous image
   $prevButton.on("click", function(event) {
     event.preventDefault();
+    savePlaceholderHeight();
     var arrayLength = imageArray.length - 1;
     console.log("previous image...");
     console.log(imageArray.length);
@@ -152,6 +153,7 @@ $(document).ready(function() {
   // next image
   $nextButton.on("click", function(event) {
     event.preventDefault();
+    savePlaceholderHeight();
     var arrayLength = imageArray.length - 1;
     console.log("next image...");
     console.log(imageArray.length);
