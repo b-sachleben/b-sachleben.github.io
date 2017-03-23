@@ -45,8 +45,8 @@ $(document).ready(function() {
           $(img).attr('alt', imgName);
 
           targetLocation.append(containingDiv);
-          containingDiv.append(link);
-          link.append(img);
+          containingDiv.appendChild(link);
+          link.appendChild(img);
 
           //Populate imageArray with large images
           imageArray.push(largeImageInfo);
@@ -75,7 +75,7 @@ $(document).ready(function() {
       imageArrayPosition = imageClicked;
       //clear, then append image element created above to image_placeholder div
       largeImagePlaceholder.innerHTML = '';
-      largeImagePlaceholder.append(largeImageElement);
+      largeImagePlaceholder.appendChild(largeImageElement);
       //clear, then fill h2 id image_title with image title text
       titlePlaceholder.innerText = '';
       titlePlaceholder.innerText = imageArray[imageClicked].title;
@@ -93,7 +93,7 @@ $(document).ready(function() {
       $(largeImageElement).attr('src', imageArray[imageArrayPosition].image);
       //clear, then append image element created above to image_placeholder div
       largeImagePlaceholder.innerHTML = '';
-      largeImagePlaceholder.append(largeImageElement);
+      largeImagePlaceholder.appendChild(largeImageElement);
       //clear, then fill h2 id image_title with image title text
       titlePlaceholder.innerText = '';
       titlePlaceholder.innerText = imageArray[imageArrayPosition].title;
